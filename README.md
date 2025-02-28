@@ -38,53 +38,41 @@ The objective of this project is to analyze sales data to:
   - Cost: Total cost
 
 ## 📊 Analysis & Visualizations
+#### 1. Data Cleaning
+- Checked for missing values and duplicates.
+ Converted Date column to datetime format.
+- Removed outliers based on the 95th percentile.
 
-1. Data Cleaning
+#### 2. Exploratory Data Analysis (EDA)
+- **Revenue Trends**: Visualized sales revenue over time.
+- **Revenue Distribution**: Histogram of revenue.
+- **Revenue by Country**: Bar chart showing total revenue by country.
+- **Revenue by Product Category**: Pie chart representation.
+- **Top-Selling Products**: Bar chart for the highest revenue-generating products.
+- **Correlation Matrix**: Heatmap to identify relationships between numerical variables.
 
-Checked for missing values and duplicates.
+#### 3. Predictive Modeling
 
-Converted Date column to datetime format.
+- **Model Used**: Ridge Regression with Polynomial Features.
 
-Removed outliers based on the 95th percentile.
+- **Feature Selection**: Unit Cost, Unit Price, Cost.
 
-2. Exploratory Data Analysis (EDA)
+- **Hyperparameter Tuning**: Grid Search applied to optimize polynomial degree and Ridge alpha value.
 
-Revenue Trends: Visualized sales revenue over time.
+- **Model Evaluation:**
 
-Revenue Distribution: Histogram of revenue.
+  - **Mean Absolute Error (MAE)**: Measures average prediction error.
 
-Revenue by Country: Bar chart showing total revenue by country.
+  - **Mean Squared Error (MSE)**: Measures variance of prediction errors.
 
-Revenue by Product Category: Pie chart representation.
+  - **R2 Score**: Evaluates model performance.
 
-Top-Selling Products: Bar chart for the highest revenue-generating products.
+- **Final RMSE on Test Set: 36.41.**
 
-Correlation Matrix: Heatmap to identify relationships between numerical variables.
-
-3. Predictive Modeling
-
-Model Used: Ridge Regression with Polynomial Features.
-
-Feature Selection: Unit Cost, Unit Price, Cost.
-
-Hyperparameter Tuning: Grid Search applied to optimize polynomial degree and Ridge alpha value.
-
-Model Evaluation:
-
-Mean Absolute Error (MAE): Measures average prediction error.
-
-Mean Squared Error (MSE): Measures variance of prediction errors.
-
-R2 Score: Evaluates model performance.
-
-Final RMSE on Test Set: 36.41.
-
-🚀 How to Run
-
-## How to Use
-- Ensure you have Python installed along with the required libraries.
--Download the dataset and place it in the project directory.
--Run the Jupyter Notebook step by step to reproduce the analysis.
+## How to Run
+#### 1. Clone the repository:
+git clone https://github.com/Rejjy-emerald/sales-data-analysis.git
+cd sales-data-analysis
 
 ## Future Improvements
 - Incorporate deep learning models.
@@ -93,18 +81,6 @@ Final RMSE on Test Set: 36.41.
 
 ## Contributing
 Contributions are welcome! If you'd like to contribute, please fork the repository and submit a pull request.
-
-## How to Run
-#### 1. Clone the repository:
-git clone https://github.com/Rejjy-emerald/sales-data-analysis.git
-cd sales-data-analysis
-
-
-#### 2. Install dependencies:
-pip install pandas numpy matplotlib seaborn scikit-learn
-
-#### 3. Run the Jupyter Notebook to execute the analysis:
-jupyter notebook super_sales_project.ipynb
 
 ## Conclusion
 This project provides key insights into sales trends and demonstrates the use of machine learning for revenue prediction. The analysis showcases the importance of data preprocessing, visualization, and model evaluation in real-world sales forecasting scenarios.
