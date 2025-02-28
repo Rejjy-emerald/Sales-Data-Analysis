@@ -1,7 +1,7 @@
 # Sales Data Analysis
 
 ## 📌 Overview
-This project analyzes sales data to uncover trends, visualize revenue distribution, and build a predictive model for revenue forecasting. The dataset contains sales-related information such as revenue, unit cost, unit price, and cost across various products and countries. This is a data analysis project that examines sales data to uncover insights, trends, and potential predictive models. The project involves data cleaning, exploratory data analysis (EDA), visualization, and machine learning modeling.
+This project analyzes sales data to uncover trends, visualize revenue distribution, and build a predictive model for revenue forecasting. The dataset contains sales-related information such as revenue, unit cost, unit price, and cost across various products and countries.
 
 ## 🎯 Objective
 The objective of this project is to analyze sales data to:
@@ -10,17 +10,15 @@ The objective of this project is to analyze sales data to:
 - Develop predictive models to forecast future sales.
 
 ## 📊 Key Insights
-- Seasonal trends significantly impact sales performance.
-- High correlation exists between promotional discounts and increased sales volume.
-- Machine learning models provide reliable forecasts for future sales based on historical data.
+- **Revenue Trends:** Identified periods of high sales revenue across different countries.
+- **Product Performance:** Determined top-selling products and their contribution to total revenue.
+- **Cost vs. Revenue Relationship:** Analyzed the impact of unit cost and price on revenue generation.
+- **Predictive Model Performance:** Achieved an RMSE of 36.41, demonstrating the model's ability to predict revenue.
 
 ## 🛠️ Technologies Used
-The following Python libraries and tools are used in this project:
-- pandas for data manipulation
-- matplotlib and seaborn for data visualization
-- scikit-learn for machine learning modeling
-- Jupyter Notebook for analysis and documentation
-- SQL for data cleaning
+- **Programming Language:** Python
+- **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
+- **Tools:** Jupyter Notebook, SQL for data cleaning, Power BI for dashboard visualizations
 
 ## Files in Repository
 - super sales project.ipynb: Jupyter Notebook with full data analysis and model training
@@ -28,43 +26,60 @@ The following Python libraries and tools are used in this project:
 - sales data.xlsx: cleaned dataset with SQL
 - salesforcourse-4fe2kehu.xlsx: Original Dataset
 
-## Dataset
-- The dataset is a raw Excel file named **salesforcourse-4fe2kehu.xlsx**
-- The SQl cleaned Excel file named **sales data.xlsx**
-- The analysis focuses on the cleaned sheet: **cleaned sales file**.
+## 🔍 Dataset
+- **Source:** Provided sales data (Excel format)
+- **Key Columns:**
+  - Date: Sales date
+  - Country: Country where the sale occurred
+  - Product Category: Category of the product sold
+  - Revenue: Total revenue generated
+  - Unit Cost: Cost per unit
+  - Unit Price: Selling price per unit
+  - Cost: Total cost
 
-## Project Workflow
-#### 1. Data Loading
-- The dataset is loaded from an Excel file using pandas.read_excel().
-- Initial exploration includes checking descriptive statistics and missing values.
+## 📊 Analysis & Visualizations
 
-#### 2. Exploratory Data Analysis (EDA)
-- Summary statistics are computed.
-- Missing values are analyzed and handled.
-- Visualizations include:
-  - Histograms and bar charts for sales distribution.
-  - Scatter plots for correlations.
-  - Heatmaps for correlation analysis.
-  - Line plots to analyze trends over time.
+1. Data Cleaning
 
-#### 3. Data Preprocessing
--Handling missing values.
--Encoding categorical variables.
--Feature engineering for better model performance.
+Checked for missing values and duplicates.
 
-#### 4. Machine Learning Model
+Converted Date column to datetime format.
 
-- The dataset is split into training and testing sets using train_test_split().
-- A predictive model is trained using:
-  -Linear Regression
-  -Decision Trees
-  -Random Forest
-- Model performance is evaluated using accuracy metrics such as MAE, MSE, RMSE.
+Removed outliers based on the 95th percentile.
 
-#### 5. Results & Insights
-- Key trends and patterns in sales data are highlighted.
-- Model performance is compared across different algorithms.
-- Business insights and recommendations are provided.
+2. Exploratory Data Analysis (EDA)
+
+Revenue Trends: Visualized sales revenue over time.
+
+Revenue Distribution: Histogram of revenue.
+
+Revenue by Country: Bar chart showing total revenue by country.
+
+Revenue by Product Category: Pie chart representation.
+
+Top-Selling Products: Bar chart for the highest revenue-generating products.
+
+Correlation Matrix: Heatmap to identify relationships between numerical variables.
+
+3. Predictive Modeling
+
+Model Used: Ridge Regression with Polynomial Features.
+
+Feature Selection: Unit Cost, Unit Price, Cost.
+
+Hyperparameter Tuning: Grid Search applied to optimize polynomial degree and Ridge alpha value.
+
+Model Evaluation:
+
+Mean Absolute Error (MAE): Measures average prediction error.
+
+Mean Squared Error (MSE): Measures variance of prediction errors.
+
+R2 Score: Evaluates model performance.
+
+Final RMSE on Test Set: 36.41.
+
+🚀 How to Run
 
 ## How to Use
 - Ensure you have Python installed along with the required libraries.
