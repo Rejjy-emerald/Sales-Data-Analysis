@@ -52,13 +52,21 @@ The objective of this project is to analyze sales data to:
 - **Correlation Matrix**: Heatmap to identify relationships between numerical variables.
 
 #### 3. Predictive Modeling
+
 - **Model Used**: Ridge Regression with Polynomial Features.
+
 - **Feature Selection**: Unit Cost, Unit Price, Cost.
+
 - **Hyperparameter Tuning**: Grid Search applied to optimize polynomial degree and Ridge alpha value.
+
 - **Model Evaluation:**
-   - **Mean Absolute Error (MAE)**: Measures average prediction error.
-   - **Mean Squared Error (MSE)**: Measures variance of prediction errors.
-   - **R2 Score**: Evaluates model performance.
+
+  - **Mean Absolute Error (MAE)**: Measures average prediction error.
+
+  - **Mean Squared Error (MSE)**: Measures variance of prediction errors.
+
+  - **R2 Score**: Evaluates model performance.
+
 - **Final RMSE on Test Set: 36.41.**
 
 ## How to Run
@@ -66,9 +74,6 @@ The objective of this project is to analyze sales data to:
 git clone https://github.com/Rejjy-emerald/sales-data-analysis.git
 cd sales-data-analysis
 
-## Dashboard Preview
-https://drive.google.com/file/d/10MQh8mPEIvOuADPriQJbcVAth0A86JQ6/view?usp=drive_link
-![Dashboard](sales dashboard 1.jpg)
 ## Future Improvements
 - Incorporate deep learning models.
 - Improve feature selection and engineering.
