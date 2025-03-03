@@ -66,6 +66,9 @@ The objective of this project is to analyze sales data to:
 git clone https://github.com/Rejjy-emerald/sales-data-analysis.git
 cd sales-data-analysis
 
+## Dashboard Preview
+![Dashboard](sales dashboard 1.jpg)
+
 ## Future Improvements
 - Incorporate deep learning models.
 - Improve feature selection and engineering.
